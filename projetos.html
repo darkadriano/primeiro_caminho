@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Caminho - Projetos e Engajamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo-primeiro-caminho.png" alt="Logotipo do projeto Primeiro Caminho" width="180">
+        <h1>Conheça Nossos Projetos e Transforme Vidas</h1>
+        <p>Descubra como atuamos no mercado de trabalho e escolha como você pode fazer a diferença hoje.</p>
+        
+        <nav>
+            <a href="index.html" class="btn" data-link>Início</a>
+            <a href="projetos.html" class="btn" data-link>Projetos e Engajamento</a>
+            <a href="cadastro.html" class="btn btn-secondary" data-link>Cadastre-se</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal dinamicamente manipulado pela SPA -->
+    <main id="app">
+
+        <!-- Seção Dinâmica: Preenchida automaticamente pelo script de templates do main.js -->
+        <section id="nossos-projetos">
+            <h2>Nossas Frentes de Atuação</h2>
+            <p>Iniciativas estruturadas para desenvolver competências técnicas e comportamentais indispensáveis para o primeiro emprego.</p>
+
+            <!-- Contêiner alvo onde o JavaScript injetará os cards gerados -->
+            <div id="lista-projetos" class="container-grid"></div>
+        </section>
+
+        <!-- Seção 2: Engajamento Social e Voluntariado -->
+        <section id="voluntariado">
+            <h2>Como Você Pode Apoiar</h2>
+            <p>Seja atuando como mentor voluntário ou colaborando com recursos, seu envolvimento impulsiona carreiras no início da jornada.</p>
+
+            <article class="card-apoio">
+                <h3>Seja um Mentor Voluntário</h3>
+                <p>Compartilhe sua experiência de mercado, realize simulações de entrevistas e ajude a revisar currículos em sessões práticas.</p>
+                <a href="cadastro.html" data-link class="btn">Quero Ser Voluntário</a>
+            </article>
+
+            <article class="card-apoio">
+                <h3>Apoio e Parcerias Corporativas</h3>
+                <p>Conecte sua empresa ao nosso banco de jovens capacitados e ofereça vagas para Jovem Aprendiz ou Estágio.</p>
+                <a href="cadastro.html" data-link class="btn">Cadastrar Empresa Parceira</a>
+            </article>
+        </section>
+
+        <!-- Seção 3: Informações de Contato -->
+        <section id="contato-projetos">
+            <h2>Central de Dúvidas</h2>
+            <p>Deseja firmar parcerias institucionais ou conhecer nossos relatórios de impacto social?</p>
+            <ul>
+                <li><strong>E-mail:</strong> parcerias@primeirocaminho.org.br</li>
+                <li><strong>Telefone:</strong> (41) 3333-4444</li>
+                <li><strong>Sede:</strong> Av. Cândido de Abreu, 500 - Curitiba, PR</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Institucional -->
+    <footer>
+        <p>Todos os direitos reservados a Adriano Poncio Marques</p>
+    </footer>
+
+    <!-- Vínculo com o Script Centralizado -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
