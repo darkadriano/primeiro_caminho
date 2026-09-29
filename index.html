@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Caminho - Início</title>
+    
+    <!-- Biblioteca Externa: SweetAlert2 (CSS e JS via CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo-primeiro-caminho.png" alt="Logotipo do projeto Primeiro Caminho" width="180">
+        <h1>Bem-vindo à sua preparação para o mercado de trabalho</h1>
+        <p>Vamos te preparar na sua jornada para que o seu currículo não seja mais apenas mais um.</p>
+        
+        <nav>
+            <a href="index.html" class="btn" data-link>Início</a>
+            <a href="#apresentacao" class="btn">Sobre Nós</a>
+            <a href="#artigo-principal" class="btn">Dicas Profissionais</a>
+            <a href="projetos.html" class="btn" data-link>Projetos e Engajamento</a>
+            <a href="#contato" class="btn">Fale Conosco</a>
+            <a href="cadastro.html" class="btn btn-secondary" data-link>Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main id="app">
+        <div class="alert alert-info" role="alert">
+            <strong>Informativo:</strong> As inscrições para as oficinas presenciais já estão abertas!
+        </div>
+
+        <section id="apresentacao">
+            <h2>Sobre o Primeiro Caminho</h2>
+            <p>Somos uma iniciativa voltada para a preparação de jovens profissionais, ajudando você a destacar seu currículo e conquistar sua oportunidade no mercado de trabalho.</p>
+            
+            <figure>
+                <img src="assets/banner-institucional.jpeg" alt="Equipe do projeto orientando jovens em um workshop profissional" width="600">
+                <figcaption>Nossa missão é capacitar talentos para os desafios do mercado de trabalho.</figcaption>
+            </figure>
+            
+            <p>Quer saber mais sobre nossas frentes de atuação, ser voluntário ou apoiar nossa causa?</p>
+            <p><a href="projetos.html" class="btn" data-link>Conhecer nossos projetos e campanhas de doação</a></p>
+        </section>
+
+        <article id="artigo-principal">
+            <h2>Seu primeiro emprego começa aqui</h2>
+            
+            <section>
+                <h3>
+                    Currículo Otimizado para ATS 
+                    <span class="badge badge-primary">Essencial</span>
+                </h3>
+                <p>3 regras de ouro para o robô de seleção ler seu currículo (formatos limpos, palavras-chave da vaga e seções essenciais).</p>
+                <img src="assets/infografico-ats-modelo.png" alt="Infográfico detalhando as etapas do ATS." width="450">
+            </section>
+
+            <section>
+                <h3>
+                    Onde Buscar Vagas 
+                    <span class="badge badge-success">Atualizado</span>
+                </h3>
+                <p>As melhores portas de entrada (programas de Jovem Aprendiz, LinkedIn inicial e sites confiáveis).</p>
+                
+                <div class="alert alert-success" role="alert">
+                    <strong>Dica de Ouro:</strong> Mantenha seu perfil do LinkedIn atualizado semanalmente para aumentar as chances de visualização por recrutadores.
+                </div>
+
+                <img src="assets/portas-de-entrada.png" alt="Infográfico mostrando caminhos para entrar no mercado." width="450">
+            </section>
+        </article>
+
+        <section id="status-inscricao">
+            <h2>Status dos Programas de Mentoria</h2>
+            <p>
+                Mentoria de Currículo: <span class="badge badge-success">Vagas Abertas</span> | 
+                Simulação de Entrevista: <span class="badge badge-warning">Últimas Vagas</span> | 
+                Oficina de LinkedIn: <span class="badge badge-error">Esgotado</span>
+            </p>
+
+            <div class="modal-backdrop" style="position: relative; height: auto; background: none; backdrop-filter: none; margin-top: 1.5rem;">
+                <div class="modal" style="border: 1px solid #E5E7EB;">
+                    <header class="modal-header">
+                        <h3>Confirmar Participação na Oficina</h3>
+                    </header>
+                    <div class="modal-body">
+                        <p>Você selecionou a oficina gratuita <strong>"Preparação para Entrevistas de Emprego"</strong>. Deseja confirmar sua reserva?</p>
+                    </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Cancelar</button>
+                        <button type="button" class="btn">Confirmar Reserva</button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato com a nossa equipe para tirar dúvidas ou saber mais sobre nossos programas:</p>
+            <ul>
+                <li><strong>E-mail:</strong> contato@primeirocaminho.org.br</li>
+                <li><strong>Telefone:</strong> (41) 3333-4444</li>
+                <li><strong>Endereço:</strong> Av. Cândido de Abreu, 500 - Curitiba, PR</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados a Adriano Poncio Marques</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
